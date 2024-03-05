@@ -1,0 +1,63 @@
+*{
+
+}
+
+body{
+
+}
+
+.conteudo{
+    display: flex;
+}
+
+section{
+
+}
+
+.conteudo__entrada, .conteudo__saida{
+    width: 500px;
+    align-content: center;
+    justify-content: center;
+    border: 4px solid var(--cor-preto);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px var(--cor-preto);
+    
+}
+
+.conteudo__entrada__card{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 55px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--cor-verde);
+    border-bottom: 4px solid var(--cor-preto);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --cor-branco: #fbfaff;
+    --cor-preto: #000000;
+    --cor-violeta: #8E0990;
+    --cor-rosa: #FFBBF0;
+    --cor-verde: #DBFF8F;
+    --cor-amarelo: #FFE68E;
+    --cor-azul: #A4FAFF;
+    --cor-violetaclaro: #BC4FBE;
+}
