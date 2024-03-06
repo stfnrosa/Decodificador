@@ -1,9 +1,11 @@
 *{
-
+    padding: 0;
+    margin: 0;
 }
 
 body{
-
+    background-image: url("../imagens/bg.jpeg");
+    background-size: cover;
 }
 
 .conteudo{
@@ -31,24 +33,12 @@ section{
     height: 55px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-lilas);
     border-bottom: 4px solid var(--cor-preto);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.circulo-pequeno{
+    
+}
 
 
 :root {
@@ -60,4 +50,5 @@ section{
     --cor-amarelo: #FFE68E;
     --cor-azul: #A4FAFF;
     --cor-violetaclaro: #BC4FBE;
+    --cor-lilas: #AC9CE9
 }
