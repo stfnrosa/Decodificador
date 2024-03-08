@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -12,6 +13,10 @@ body{
 
 .conteudo{
     display: flex;
+    padding: 5% 15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25%;
 }
 
 section{
@@ -30,18 +35,31 @@ section{
 
 .conteudo__entrada__card{
     display: flex;
-    justify-content: space-between;
     align-content: center;
     height: 55px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: var(--cor-lilas);
+    background-color: var(--cor-azul);
     border-bottom: 4px solid var(--cor-preto);
 }
-.circulo-pequeno{
-    
+
+.conteudo__entrada__conteudo{
+
 }
 
+.conteudo__saida__card{
+    display: flex;
+    align-content: center;
+    height: 55px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--cor-amarelo);
+    border-bottom: 4px solid var(--cor-preto);    
+}
+
+.conteudo__saida__conteudo{
+
+}
 
 :root {
     --cor-branco: #fbfaff;
