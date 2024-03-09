@@ -23,7 +23,7 @@ section{
 
 }
 
-.conteudo__entrada, .conteudo__saida{
+.entrada__card, .retorno__card{
     width: 500px;
     align-content: center;
     justify-content: center;
@@ -33,7 +33,7 @@ section{
     
 }
 
-.conteudo__entrada__card{
+.entrada__card__topo{
     display: flex;
     align-content: center;
     height: 55px;
@@ -43,11 +43,15 @@ section{
     border-bottom: 4px solid var(--cor-preto);
 }
 
-.conteudo__entrada__conteudo{
+.entrada__card__conteudo{
 
 }
 
-.conteudo__saida__card{
+.entrada__botao{
+
+}
+
+.retorno__card__topo{
     display: flex;
     align-content: center;
     height: 55px;
@@ -57,7 +61,7 @@ section{
     border-bottom: 4px solid var(--cor-preto);    
 }
 
-.conteudo__saida__conteudo{
+.retorno__card__conteudo{
 
 }
 
