@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,14 +23,15 @@ section{
 
 }
 
-.entrada__card, .retorno__card{
-    width: 500px;
+.entrada__card, 
+.retorno__card{
+    width: 450px;
+    height: 385px;
     align-content: center;
     justify-content: center;
     border: 4px solid var(--cor-preto);
     border-radius: 10px;
-    box-shadow: 5px 5px 0px 0px var(--cor-preto);
-    
+    box-shadow: 5px 5px 0px 0px var(--cor-preto);    
 }
 
 .entrada__card__topo{
@@ -42,8 +44,21 @@ section{
     border-bottom: 4px solid var(--cor-preto);
 }
 
-.entrada__card__conteudo{
 
+#conteudo__texto{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    resize: none;
+}
+
+#conteudo__texto:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 
 .entrada__botao{
@@ -74,13 +89,6 @@ section{
     background: #F4E6DC; 
     transform: translateY(3px);
 }
-
-
-
-
-
-
-
 
 
 .retorno__card__topo{
