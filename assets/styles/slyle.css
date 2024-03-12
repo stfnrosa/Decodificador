@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap')
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+
 }
 
 body{
@@ -12,63 +15,129 @@ body{
 }
 
 .conteudo{
+}
+
+.campo-texto{
     display: flex;
-    padding: 5% 15%;
+    padding: 5% 20%;
     align-items: center;
     justify-content: space-between;
-    gap: 25%;
+    gap: 1rem;
 }
 
-section{
 
-}
 
-.entrada__card, 
-.retorno__card{
+
+.campo-texto__entrada,
+.campo-texto__retorno {
     width: 450px;
     height: 385px;
     align-content: center;
     justify-content: center;
-    border: 4px solid var(--cor-preto);
+    border-top: 4px solid var(--cor-branco);
+    border-left: 4px solid var(--cor-branco);
+    border-right: 4px solid var(--cor-rosaEscuro);
+    border-bottom: 4px solid var(--cor-rosaEscuro);
     border-radius: 10px;
-    box-shadow: 5px 5px 0px 0px var(--cor-preto);    
+    outline: 2px solid var(--cor-azulEscuro);  
 }
 
-.entrada__card__topo{
+.campo-texto__entrada__topo,
+.campo-texto__retorno__topo{
     display: flex;
     align-content: center;
     height: 55px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: var(--cor-azul);
-    border-bottom: 4px solid var(--cor-preto);
+    background-color: var(--cor-lilas);
+    border: none;
 }
 
+.circulo-pequeno{
+    margin: 0.5rem 0.25rem;
+}
 
-#conteudo__texto{
+.campo-texto__entrada__conteudo{
+
+}
+
+#entrada__texto,
+#retorno__texto {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: var(--cor-rosaClaro);
+    padding: 10px;
     font-size: 1.5rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     resize: none;
+    border: none;
 }
 
-#conteudo__texto:focus{
+#entrada__texto:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
 
-.entrada__botao{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+#retorno__texto:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 
-.entrada__botao__tecla {
-    width: 12.5rem;
+
+.campo-texto__retorno__conteudo{
+
+}
+
+.botoes{
+}
+
+.botoes__aviso{
+
+}
+
+.botoes__botao{
+    display: flex;
+    padding: 0% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.botoes__botao__tecla {
+    width: 18.5rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    color: #332020; 
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background: var(--cor-rosaClaro); 
+    border-radius: 5px;
+    border-top: 4px solid var(--cor-branco);
+    border-left: 4px solid var(--cor-branco);
+    border-right: 4px solid var(--cor-rosaEscuro);
+    border-bottom: 4px solid var(--cor-rosaEscuro);
+    border-radius: 10px;
+    outline: 2px solid var(--cor-azulEscuro);
+}
+
+.botoes__botao__tecla:active {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    background: #F4E6DC; 
+    transform: translateY(3px);
+}
+ 
+.botoes__botao__troca{
+    width: 3rem;
     height: 3rem;
     cursor: pointer;
     position: relative;
@@ -77,42 +146,39 @@ section{
     font: bold 20px arial;
     text-decoration: none;
     text-align: center;
-    background: #F4E6DC; 
-    border-radius: 5px;
-    border: 0px solid #332020;
-    box-shadow: 0px 5px 0px #DECDBA,  2px 3px 0px #DECDBA, -2px 3px 0px #DECDBA;
-    transition: background 0.3s, transform 0.1s ease-out;
+    background: var(--cor-rosaClaro); 
+    border-top: 4px solid var(--cor-branco);
+    border-left: 4px solid var(--cor-branco);
+    border-right: 4px solid var(--cor-rosaEscuro);
+    border-bottom: 4px solid var(--cor-rosaEscuro);
+    border-radius: 10px;
+    outline: 2px solid var(--cor-azulEscuro);
 }
 
-.entrada__botao__tecla:active {
+.botoes__botao__troca:active {
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
     background: #F4E6DC; 
     transform: translateY(3px);
 }
 
-
-.retorno__card__topo{
-    display: flex;
-    align-content: center;
-    height: 55px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: var(--cor-amarelo);
-    border-bottom: 4px solid var(--cor-preto);    
+#seta-troca{
+    margin: 0.rem;
 }
 
-.retorno__card__conteudo{
 
-}
+
 
 :root {
-    --cor-branco: #fbfaff;
+    --cor-branco: #fffefe;
     --cor-preto: #000000;
     --cor-violeta: #8E0990;
     --cor-rosa: #FFBBF0;
+    --cor-rosaEscuro: #E96992;
+    --cor-rosaClaro: #FFE1E6;
     --cor-verde: #DBFF8F;
     --cor-amarelo: #FFE68E;
     --cor-azul: #A4FAFF;
+    --cor-azulEscuro: #0058AA;
     --cor-violetaclaro: #BC4FBE;
-    --cor-lilas: #AC9CE9
+    --cor-lilas: #E9B7E8;
 }
