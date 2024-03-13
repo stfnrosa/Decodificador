@@ -8,33 +8,39 @@
 <body>
     <header></header>
     <main class="conteudo">
-        <section class="campo-texto">
-            <div class="campo-texto__entrada">
-                <div class="campo-texto__entrada__topo">
+        <section class="entrada">
+            <div class="entrada__campo">
+                <div class="entrada__campo__topo">
                     <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
                 </div>
-                <div class="campo-texto__entrada__conteudo">
+                <div class="entrada__campo__texto">
                    <textarea name="entrada" id="entrada__texto" placeholder="Digite seu texto"></textarea> 
                 </div>
             </div>
-            <div class="campo-texto__retorno">
-                <div class="campo-texto__retorno__topo">
-                    <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
-                </div>
-                <div class="retorno__texto">
-                 
-                </div>
-            </div>            
-        </section>
-        <section class="botoes">
-            <div class="botoes__aviso">
+            <div class="entrada__aviso">
 
             </div>
-            <div class="botoes__botao"> 
-                <button class="botoes__botao__tecla">Criptografar</button>
-                <button class="botoes__botao__troca"><img src="./assets/imagens/setas-flechas.png" id="seta-troca"></button>
-                <button class="botoes__botao__tecla">Descriptografar</button>
-            </div>
+            <div class="entrada__botoes"> 
+                <button class="botao" id="botao-criptografar">Criptografar</button>
+                <button class="botao" id="botao-descriptografar">Descriptografar</button>
+            </div>                       
+        </section>
+        <button  id="botao-trocar"><img src="./assets/imagens/setas-flechas.png" id="seta-trocar"></button>
+        <section class="retorno">
+            <div class="retorno__campo">
+                <div class="retorno__campo__topo">
+                    <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
+                </div>
+                <div class="retorno__campo__texto">
+                    <div class="retorno__campo__imagem">
+                        <img src="./assets/busca.png" id="busca-imagem">
+                    </div>
+                    <p><span class="texto__destaque">Nenhuma mensagem encontrada!</span><br>
+                    Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="retorno__campo__botao-copiar">
+                    <button class="botao" id="botao-copiar">Copiar</button>
+                </div>            
         </section>
     </main>
     <footer></footer>
