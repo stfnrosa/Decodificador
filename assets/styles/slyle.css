@@ -9,23 +9,28 @@
 }
 
 body{
-    height: 100vh;
-    background: rgb(148,148,235);
+    background: var(--cor-azul);
 }
 
 .conteudo{
+    margin-top: 5rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
 }
 
 .entrada{
-    padding: 5%;
+    
 }
 
 
 .entrada__campo{
+    background-color: var(--cor-rosaClaro);
+    background-size: cover;
     width: 30rem;
     height: 35rem;
-    margin-left: 3.75rem;
     align-content: center;
     justify-content: center;
     border-top: 0.25rem solid var(--cor-branco);
@@ -52,12 +57,13 @@ body{
     top: 0.5rem;
 }
 
-.entrada__campo__texto{}
+.entrada__campo__texto{
+    
+}
 #entrada__texto{
-    width: 29.5rem;
-    height: 31.5rem;
+    background: none;
+    text-decoration: none;
     font-family: "IBM Plex Mono", monospace;
-    background-color: var(--cor-rosaClaro);
     padding: 0.625rem;
     font-size: 1.5rem;
     border-bottom-left-radius: 0.125rem;
@@ -74,18 +80,17 @@ body{
 .entrada__aviso{}
 
 .entrada__botoes{
-        display: flex;
-        margin-top: 1rem;
-        justify-content: space-around;
-        gap: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .botao{
-    width: 18rem;
+    width: 30rem;
     height: 3rem;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
     color: var(--cor-azulEscuro); 
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
@@ -111,11 +116,6 @@ body{
 #botao-trocar{
     width: 3rem;
     height: 3rem;
-    cursor: pointer;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    display: inline-block;
     background: var(--cor-rosaClaro); 
     border-top: 0.25rem solid var(--cor-branco);
     border-left: 0.25rem solid var(--cor-branco);
@@ -134,18 +134,21 @@ body{
     margin: 0.5rem;
 }
 #botao-descriptografar{
-    
+    display: none;
 }
 .retorno{
     
 }
 .retorno__campo{
-    position: absolute;
-    right: 10rem;
-    width: 25rem;
-    height: 100vh;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: var(--cor-rosaClaro);
+    background-size: cover;
+    width: 30rem;
+    height: 35rem;
     border-top: 0.25rem solid var(--cor-branco);
     border-left: 0.25rem solid var(--cor-branco);
     border-right: 0.25rem solid var(--cor-rosaEscuro);
@@ -153,15 +156,7 @@ body{
     border-radius: 0.3125rem; 
     outline: 0.125rem solid var(--cor-azulEscuro);
 }
-.retorno__campo__topo{
-    position: relative;
-    align-content: center;
-    height: 3rem; 
-    border-top-left-radius: 0.125rem; 
-    border-top-right-radius: 0.125rem;
-    background-color: var(--cor-lilas);
-    border: none;
-}
+
 .retorno__campo__imagem{
     
 }
@@ -176,11 +171,8 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
     font-family: "IBM Plex Mono", monospace;
     font-size: 1.25rem ;
-    background-color: var(--cor-rosaClaro);
-    background-size: cover;
     border-bottom-left-radius: 0.125rem;
     border-bottom-right-radius: 0.125rem;
 }
@@ -198,23 +190,25 @@ body{
     font-weight: 600;
 
 }
-.retorno__campo__botao-copiar{}
+.retorno__botao-copiar{
+    display: none;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 #botao-copiar{
-    position: absolute;
-    left: 3.5rem;
-    bottom: 0.5rem;
+    
 }
 
 :root {
-    --cor-branco: #fffefe;
+    --cor-branco: #ffffff;
     --cor-preto: #000000;
     --cor-violeta: #8E0990;
     --cor-rosa: #FFBBF0;
     --cor-rosaEscuro: #E96992;
     --cor-rosaClaro: #FFE1E6;
-    --cor-verde: #DBFF8F;
-    --cor-amarelo: #FFE68E;
-    --cor-azul: #A4FAFF;
+    --cor-azul: #befcfc;
     --cor-azulEscuro: #0058AA;
     --cor-violetaclaro: #BC4FBE;
     --cor-lilas: #E9B7E8;

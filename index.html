@@ -14,7 +14,7 @@
                     <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
                 </div>
                 <div class="entrada__campo__texto">
-                   <textarea name="entrada" id="entrada__texto" placeholder="Digite seu texto"></textarea> 
+                   <input type="text"  name="entrada" id="entrada__texto" placeholder="Digite seu texto"></input> 
                 </div>
             </div>
             <div class="entrada__aviso">
@@ -22,15 +22,12 @@
             </div>
             <div class="entrada__botoes"> 
                 <button class="botao" id="botao-criptografar">Criptografar</button>
-                <button class="botao" id="botao-descriptografar">Descriptografar</button>
+                <button class="botao" id="botao-descriptografar" >Descriptografar</button>
             </div>                       
         </section>
         <button  id="botao-trocar"><img src="./assets/imagens/setas-flechas.png" id="seta-trocar"></button>
         <section class="retorno">
             <div class="retorno__campo">
-                <div class="retorno__campo__topo">
-                    <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
-                </div>
                 <div class="retorno__campo__texto">
                     <div class="retorno__campo__imagem">
                         <img src="./assets/busca.png" id="busca-imagem">
@@ -38,9 +35,10 @@
                     <p><span class="texto__destaque">Nenhuma mensagem encontrada!</span><br>
                     Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-                <div class="retorno__campo__botao-copiar">
-                    <button class="botao" id="botao-copiar">Copiar</button>
-                </div>            
+            </div>
+            <div class="retorno__botao-copiar">
+                <button class="botao" id="botao-copiar">Copiar</button>
+            </div>            
         </section>
     </main>
     <footer></footer>
