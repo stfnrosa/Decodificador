@@ -14,15 +14,20 @@
                     <img src="./assets/imagens/botao-fechar.png" class="topo__fechar">
                 </div>
                 <div class="entrada__campo__texto">
-                   <input type="text"  name="entrada" id="entrada__texto" placeholder="Digite seu texto"></input> 
+                   <textarea name="texto-entrada" class="entrada__texto" cols="30"  rows="15" maxlength="200"></textarea>
                 </div>
             </div>
             <div class="entrada__aviso">
-
+                <div class="entrada__aviso__imagem">
+                    <img src="./assets/imagens/alerta.png" class="">
+                </div>
+                <div class="entrada__aviso__texto">
+                    Apenas letras minúsculas e sem acento.
+                </div>
             </div>
             <div class="entrada__botoes"> 
-                <button class="botao" id="botao-criptografar">Criptografar</button>
-                <button class="botao" id="botao-descriptografar" >Descriptografar</button>
+                <button class="botao" id="botao-criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="botao" id="botao-descriptografar" onclick="descriptografar()" >Descriptografar</button>
             </div>                       
         </section>
         <button  id="botao-trocar"><img src="./assets/imagens/setas-flechas.png" id="seta-trocar"></button>
@@ -32,12 +37,11 @@
                     <div class="retorno__campo__imagem">
                         <img src="./assets/busca.png" id="busca-imagem">
                     </div>
-                    <p><span class="texto__destaque">Nenhuma mensagem encontrada!</span><br>
-                    Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <textarea readonly name="texto-retorno" class="retorno__texto" cols="30" rows="5">Nenhuma mensagem encontrada. Digite o texto que você deseja criptografar ou descriptografar na janela ao lado</textarea>
                 </div>
             </div>
             <div class="retorno__botao-copiar">
-                <button class="botao" id="botao-copiar">Copiar</button>
+                <button class="botao" id="botao-copiar" onclick="copiarTexto()">Copiar</button>
             </div>            
         </section>
     </main>

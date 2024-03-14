@@ -22,7 +22,12 @@ body{
 }
 
 .entrada{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 
@@ -58,9 +63,11 @@ body{
 }
 
 .entrada__campo__texto{
+    text-align: justify;
     
 }
-#entrada__texto{
+.entrada__texto{
+    width: 100%;
     background: none;
     text-decoration: none;
     font-family: "IBM Plex Mono", monospace;
@@ -72,19 +79,41 @@ body{
     border: none;
 }
 
-#entrada__texto:focus{
+.entrada__texto:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
-.entrada__aviso{}
-
-.entrada__botoes{
+.entrada__aviso{
+    background-color: var(--cor-amarelo);
+    width: 28rem;
+    height: 3rem;
     display: flex;
     margin-top: 1rem;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    border-top: 0.25rem solid var(--cor-branco);
+    border-left: 0.25rem solid var(--cor-branco);
+    border-right: 0.25rem solid var(--cor-rosaEscuro);
+    border-bottom: 0.25rem solid var(--cor-rosaEscuro);
+    border-radius: 1.875rem; 
+    outline: 0.125rem solid var(--cor-azulEscuro);
+    
+}
+.aviso__imagem{
+    width: 1.5rem;
+}
+.entrada__aviso__texto{
+    font-family:"IBM Plex Mono", monospace;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.entrada__botoes{
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao{
@@ -157,24 +186,34 @@ body{
     outline: 0.125rem solid var(--cor-azulEscuro);
 }
 
+
 .retorno__campo__imagem{
     
 }
 
 #busca-imagem{
     width: 50%;
+    
 }
 
-.retorno__campo__texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.retorno__texto{
+    width: 100%;
+    background: none;
+    text-decoration: none;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1.25rem ;
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 1.5rem;
     border-bottom-left-radius: 0.125rem;
     border-bottom-right-radius: 0.125rem;
+    resize: none;
+    border: none;
+}
+
+.retorno__texto:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 
 .retorno__campo__imagem{
@@ -185,11 +224,6 @@ body{
     width: 50%;
 } 
 
-.texto__destaque{
-    font-size: 2rem;
-    font-weight: 600;
-
-}
 .retorno__botao-copiar{
     display: none;
     margin-top: 1rem;
@@ -203,6 +237,7 @@ body{
 
 :root {
     --cor-branco: #ffffff;
+    --cor-amarelo: #FFE68E;
     --cor-preto: #000000;
     --cor-violeta: #8E0990;
     --cor-rosa: #FFBBF0;
