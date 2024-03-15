@@ -128,3 +128,22 @@ function decifrar(texto){
     }
     return textoDecifrado;
 }
+
+function copiarTexto() {
+    let copiar = document.querySelector(".retorno__texto");
+    copiar.focus();
+    copiar.setSelectionRange(0, copiar.value.length);
+    
+    try {
+      document.execCommand("copy");
+      console.log('Texto copiado com sucesso!');
+    } catch (err) {
+      console.error('Erro ao copiar texto:', err);
+    }
+  }
+
+
+
+
+ 
+  
