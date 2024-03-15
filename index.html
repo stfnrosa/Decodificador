@@ -27,21 +27,21 @@
             </div>
             <div class="entrada__botoes"> 
                 <button class="botao" id="botao-criptografar" onclick="criptografar()">Criptografar</button>
-                <button class="botao" id="botao-descriptografar" onclick="descriptografar()" >Descriptografar</button>
+                <button class="botao" id="botao-descriptografar" onclick="descriptografar()" disabled>Descriptografar</button>
             </div>                       
         </section>
-        <button  id="botao-trocar"><img src="./assets/imagens/setas-flechas.png" id="seta-trocar"></button>
+        <button  id="botao-trocar"><img src="./assets/imagens/setas-flechas.png" id="seta-trocar" onclick="trocar()"></button>
         <section class="retorno">
             <div class="retorno__campo">
                 <div class="retorno__campo__texto">
                     <div class="retorno__campo__imagem">
                         <img src="./assets/busca.png" id="busca-imagem">
                     </div>
-                    <textarea readonly name="texto-retorno" class="retorno__texto" cols="30" rows="5">Nenhuma mensagem encontrada. Digite o texto que você deseja criptografar ou descriptografar na janela ao lado</textarea>
+                    <textarea readonly name="texto-retorno" class="retorno__texto" cols="30" rows="5" maxlength="200">Nenhuma mensagem encontrada. Digite o texto que você deseja criptografar ou descriptografar na janela ao lado</textarea>
                 </div>
             </div>
             <div class="retorno__botao-copiar">
-                <button class="botao" id="botao-copiar" onclick="copiarTexto()">Copiar</button>
+                <button class="botao" id="botao-copiar" onclick="copiarTexto()" hidden>Copiar</button>
             </div>            
         </section>
     </main>

@@ -5,30 +5,34 @@
 // o = ober
 // u = ufat
 //amor = aimober
+const textareaEntrada = document.querySelector(".entrada__texto");
+const botaoCriptografar = document.getElementById("botao-criptografar");
+const botaoDescriptografar = document.getElementById("botao-descriptografar");
+const textareaRetorno = document.querySelector(".retorno__texto");
+const imagemRetorono = document.getElementById("busca-imagem");
+const botaoCopiar = document.getElementById("botao-copiar");        
+
 
 function criptografar() {
-    let textareaEntrada = document.querySelector(".entrada__texto");
-    let entrada = textareaEntrada.value; 
-
-    let textareaRetorno = document.querySelector(".retorno__texto");
-    let retorno = textareaRetorno.value; 
-
-    let imagemRetorono = document.getElementById("busca-imagem");
-    let botaoCopiar = document.querySelector(".retorno__botao-copiar");
-
+    let entrada = textareaEntrada.value;  
     let textoVerificado = verificarLetras(entrada); 
     textareaEntrada.value = textoVerificado; 
 
-    if(imagemRetorono){
-        imagemRetorono.remove();
+    if (textoVerificado === ""){
+        imagemRetorono.hidden = false;
+        botaoCopiar.hidden = true;
+        textareaRetorno.style.textAlign = "center";
+        textareaRetorno.setAttribute("rows", "5");
+        return;
+    }else{
+        imagemRetorono.hidden = true;
+        botaoCopiar.hidden = false;
+        textareaRetorno.style.textAlign = "justify";
+        textareaRetorno.setAttribute("rows", "15");
     }
     
-    let textoSubstituido = substituirLetras(textoVerificado); 
+    let textoSubstituido = encriptar(textoVerificado); 
     textareaRetorno.value = textoSubstituido; 
-    textareaRetorno.style.textAlign = "justify";
-    botaoCopiar.style.display = "flex";
-    textareaRetorno.setAttribute("rows", "15");
-    textareaRetorno.setAttribute("maxlength", "200");
 }
 
 function verificarLetras(texto) {
@@ -48,7 +52,7 @@ function verificarLetras(texto) {
     return texto;
 }
 
-function substituirLetras(texto){
+function encriptar(texto){
     const substituicoes = {
         "a":"ai",
         "e":"enter",
@@ -66,5 +70,45 @@ function substituirLetras(texto){
         }
     }
     return textoSubstituido;
+}
+
+function trocar(){
+    let entrada = textareaEntrada.value;   
+    let retorno = textareaRetorno.value;
+    if(!botaoCriptografar.disabled){
+        botaoCriptografar.disabled = true;
+        botaoDescriptografar.disabled = false;
+    }else{
+        botaoCriptografar.disabled = false;
+        botaoDescriptografar.disabled = true;
+    }
+    if(entrada === ""){
+        return;
+    }
+    textareaEntrada.value = retorno; 
+    textareaRetorno.value = entrada;
+
+}
+
+function descriptografar() {
+    let entrada = textareaEntrada.value;  
+    let textoVerificado = verificarLetras(entrada); 
+    textareaEntrada.value = textoVerificado; 
+
+    if (textoVerificado === ""){
+        imagemRetorono.hidden = false;
+        botaoCopiar.hidden = true;
+        textareaRetorno.style.textAlign = "center";
+        textareaRetorno.setAttribute("rows", "5");
+        return;
+    }else{
+        imagemRetorono.hidden = true;
+        botaoCopiar.hidden = false;
+        textareaRetorno.style.textAlign = "justify";
+        textareaRetorno.setAttribute("rows", "15");
+    }
+    
+    let textoSubstituido = decifrar(textoVerificado); 
+    textareaRetorno.value = textoSubstituido; 
 }
 

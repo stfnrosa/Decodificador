@@ -111,9 +111,11 @@ body{
 }
 
 .entrada__botoes{
-    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .botao{
@@ -141,7 +143,26 @@ body{
     background: #F4E6DC; 
     transform: translateY(3px);
 }
-#botao-criptografar{}
+#botao-criptografar{
+    margin-top: 1rem;
+}
+#botao-criptografar:disabled{
+    opacity: 0.5; 
+    cursor: not-allowed;
+    background: var(--cor-cinza);
+    border: none;
+}
+
+#botao-descriptografar{
+    margin-top: 1rem;
+}
+#botao-descriptografar:disabled{
+    opacity: 0.5; 
+    cursor: not-allowed;
+    background: var(--cor-cinza);
+    border: none;
+}
+
 #botao-trocar{
     width: 3rem;
     height: 3rem;
@@ -162,9 +183,7 @@ body{
 #seta-trocar{
     margin: 0.5rem;
 }
-#botao-descriptografar{
-    display: none;
-}
+
 .retorno{
     
 }
@@ -225,7 +244,6 @@ body{
 } 
 
 .retorno__botao-copiar{
-    display: none;
     margin-top: 1rem;
     align-items: center;
     justify-content: center;
@@ -247,4 +265,5 @@ body{
     --cor-azulEscuro: #0058AA;
     --cor-violetaclaro: #BC4FBE;
     --cor-lilas: #E9B7E8;
+    --cor-cinza: #808080;
 }
