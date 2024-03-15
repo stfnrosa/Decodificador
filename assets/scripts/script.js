@@ -53,7 +53,7 @@ function verificarLetras(texto) {
 }
 
 function encriptar(texto){
-    const substituicoes = {
+    let substituicoes = {
         "a":"ai",
         "e":"enter",
         "i":"imes",
@@ -108,7 +108,23 @@ function descriptografar() {
         textareaRetorno.setAttribute("rows", "15");
     }
     
-    let textoSubstituido = decifrar(textoVerificado); 
-    textareaRetorno.value = textoSubstituido; 
+    let textoDecifrado = decifrar(textoVerificado); 
+    textareaRetorno.value = textoDecifrado; 
 }
 
+function decifrar(texto){
+    let substituicoes = {
+        "ai":"a",
+        "enter":"e",
+        "imes":"i",
+        "ober":"o",
+        "ufat":"u"
+    };
+
+    let textoDecifrado = texto;
+    for(let padrao in substituicoes){
+        let expressaoRegular = new RegExp(padrao, "g");
+        textoDecifrado = textoDecifrado.replace(expressaoRegular, substituicoes[padrao]);
+    }
+    return textoDecifrado;
+}
