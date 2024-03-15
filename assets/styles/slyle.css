@@ -253,6 +253,18 @@ body{
     
 }
 
+.rodape{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-lilas);
+    color: var(--cor-azulEscuro);
+    font-family: var(--font);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 :root {
     --cor-branco: #ffffff;
     --cor-amarelo: #FFE68E;
@@ -266,4 +278,5 @@ body{
     --cor-violetaclaro: #BC4FBE;
     --cor-lilas: #E9B7E8;
     --cor-cinza: #808080;
+    --font: "IBM Plex Mono", monospace;
 }
