@@ -1,6 +1,6 @@
 # Criptografador e Descriptografador de Texto
 
-Este é um simples aplicativo web que permite criptografar e descriptografar texto substituindo letras por outras de acordo com um padrão predefinido.
+Este é uma simples aplicação web que permite criptografar e descriptografar texto substituindo letras por outras de acordo com um padrão predefinido.
 
 
 ## Funcionalidades
