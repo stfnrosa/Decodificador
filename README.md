@@ -18,8 +18,8 @@ Este projeto apresenta uma estética única com cores e o próprio layout person
 
 ### Layout:
 <p>
-  <img src="./assets/imagens/exemplo.png" alt="Exemplo" style="width: 45%;">
-  <img src="./assets/imagens/exemplo1.png" alt="Exemplo" style="width: 45%;">
+  <img src="./assets/imagens/exemplo.png" alt="Exemplo" style="width: 50%;">
+  <img src="./assets/imagens/exemplo1.png" alt="Exemplo" style="width: 50%;">
 </p>
 
 
