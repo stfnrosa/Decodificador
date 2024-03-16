@@ -15,3 +15,5 @@ Este projeto foi desenvolvido como parte do desafio #challengeonedecodificador6,
 ## Personalização
 Este projeto apresenta uma estética única com cores e formas personalizadas.
 ![Texto Alternativo](./assets/imagens/cores.png)
+
+## Fluxo da Aplicação
