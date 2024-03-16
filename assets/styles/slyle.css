@@ -266,10 +266,9 @@ body{
 }
 
 :root {
-    --cor-branco: #ffffff;
+    --cor-branco: #fffefe;
     --cor-amarelo: #FFE68E;
     --cor-preto: #000000;
-    --cor-violeta: #8E0990;
     --cor-rosa: #FFBBF0;
     --cor-rosaEscuro: #E96992;
     --cor-rosaClaro: #FFE1E6;
