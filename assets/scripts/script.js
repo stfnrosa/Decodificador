@@ -1,10 +1,3 @@
-//regras para criptografia
-// e = enter
-// i = imes
-// a = ai
-// o = ober
-// u = ufat
-//amor = aimober
 const textareaEntrada = document.querySelector(".entrada__texto");
 const botaoCriptografar = document.getElementById("botao-criptografar");
 const botaoDescriptografar = document.getElementById("botao-descriptografar");
