@@ -1,0 +1,40 @@
+@media (max-width: 1263px) {
+    .conteudo {
+        margin: 1rem;
+        flex-direction: column;
+    }    
+    #botao-trocar{
+        margin: 1rem;
+    }
+ 
+}
+
+@media (max-width: 505px) {
+    .conteudo {
+        flex-direction: column;
+    }    
+    .entrada__campo{
+        height: 25rem;
+        width: auto;
+    }
+    #botao-trocar{
+        margin: 1rem;
+    }
+    #busca-imagem{
+        display: none;
+    }
+    .retorno__campo{
+        height: auto;
+        width: auto;
+    }
+    .botao{ 
+        width: 100%;
+    }
+    .aviso__imagem{
+        display: none;
+    }
+    .entrada__aviso{
+        width: auto;
+    }
+}
+
