@@ -10,7 +10,8 @@ const botaoCriptografar = document.getElementById("botao-criptografar");
 const botaoDescriptografar = document.getElementById("botao-descriptografar");
 const textareaRetorno = document.querySelector(".retorno__texto");
 const imagemRetorono = document.getElementById("busca-imagem");
-const botaoCopiar = document.getElementById("botao-copiar");        
+const botaoCopiar = document.getElementById("botao-copiar");    
+const textoPadrao = "Nenhuma mensagem encontrada. Digite o texto que você deseja criptografar ou descriptografar na janela ao lado"    
 
 
 function criptografar() {
@@ -20,6 +21,7 @@ function criptografar() {
 
     if (textoVerificado === ""){
         imagemRetorono.hidden = false;
+        textareaRetorno = textoPadrao.value
         botaoCopiar.hidden = true;
         textareaRetorno.style.textAlign = "center";
         textareaRetorno.setAttribute("rows", "5");
