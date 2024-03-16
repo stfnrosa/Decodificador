@@ -21,7 +21,7 @@ function criptografar() {
 
     if (textoVerificado === ""){
         imagemRetorono.hidden = false;
-        textareaRetorno = textoPadrao.value
+        textareaRetorno.value = textoPadrao;
         botaoCopiar.hidden = true;
         textareaRetorno.style.textAlign = "center";
         textareaRetorno.setAttribute("rows", "5");
