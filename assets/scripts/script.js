@@ -87,10 +87,12 @@ function trocar(){
     if(entrada === ""){
         return;
     }
-    textareaEntrada.value = retorno; 
-    textareaRetorno.value = entrada;
-
+    if(entrada !== ""){
+        textareaEntrada.value = retorno; 
+        textareaRetorno.value = entrada;
+    }
 }
+
 
 function descriptografar() {
     let entrada = textareaEntrada.value;  
@@ -142,7 +144,7 @@ function copiarTexto() {
     } catch (err) {
       console.error('Erro ao copiar texto:', err);
     }
-  }
+}
 
 
 
